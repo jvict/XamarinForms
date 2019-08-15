@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App01_ConsutarCEP.MainPage">
+    <!-- Stacklayout empilha os elementos que estão dentro dele-->
+    <StackLayout Padding="30" Spacing="30" BackgroundColor="#FFBF00">
+        <!-- Imagem -->
+
+        <Image Source="logo.png" x:Name="Logo"/>
+            
+        <!-- Campo de texto-->
+        <Entry Placeholder="Digite o CEP" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" x:Name="CEP"/>
+
+        <!-- Botão Clicked="Button_Clicked" -->
+        <Button Text="Buscar CEP" TextColor="#FFFFFF" BackgroundColor="#00416B"  x:Name="BOTAO"/>  
+      
+            
+        <Label Text="Welcome to Xamarin.Forms!" x:Name="RESULTADO"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <!-- Inicio GRIg
+
+        <Label Text="Notes"
+               HorizontalOptions="Center"
+               FontAttributes="Bold" />
+        <Editor x:Name="editor"
+                Placeholder="Enter your note"
+                HeightRequest="100" />
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+        Fim GRID-->
+    </StackLayout>
+
+</ContentPage>
